@@ -1,19 +1,67 @@
+
+body {
+  background-color: #fff9db;
+  color: #333;
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 .app-title {
   text-align: center;
   margin-bottom: 1rem;
+  color: #b8860b;
 }
+
+.hero {
+  background-color: #ffe57e;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  color: #b8860b;
+}
+
+.hero p {
+  margin: 0 0 2rem;
+  font-size: 1.25rem;
+}
+
+.cta-button {
+  background-color: #f0c040;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s;
+}
+
+.cta-button:hover {
+  background-color: #d4a100;
+}
+
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
+  padding: 1rem;
 }
 
 .item {
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #f0c040;
+  border-radius: 8px;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #fffbe6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-4px);
 }
 
 .item img {
