@@ -1,16 +1,15 @@
-# Hello World React App
+# КомКом React Shop
 
-This repository contains a minimal React application built with [Vite](https://vitejs.dev/). It simply renders **Hello World**.
+This repository contains a minimal React application for a demo store named **КомКом**. It lists 20 hard-coded television products with images.
 
 ## Development
 
 ```bash
+cd hello-world
 npm install
 npm run dev
 ```
 
-The app lives inside the `hello-world` directory.
-
 ## Deployment
 
-A GitHub Actions workflow is provided to deploy the built files to GitHub Pages whenever changes are pushed to the `main` branch.
+The project includes a GitHub Actions workflow that builds the Vite project and deploys the `dist` folder to GitHub Pages whenever changes land on the `main` branch.
