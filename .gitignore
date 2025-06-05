@@ -1,0 +1,8 @@
+hello-world/node_modules/
+hello-world/dist/
+
+# Logs
+npm-debug.log*
+
+# Local env files
+.env
