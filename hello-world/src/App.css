@@ -6,6 +6,17 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+.nav {
+  background-color: #ffe57e;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav a {
+  margin: 0 0.5rem;
+  color: #b8860b;
+}
+
 .app-title {
   text-align: center;
   margin-bottom: 1rem;

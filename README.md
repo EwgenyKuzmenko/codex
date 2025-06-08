@@ -1,6 +1,5 @@
 # КомКом React Shop
 
-This repository contains a minimal React application for a demo store named **КомКом**. It lists 20 hard-coded television products with images. When running the dev server, the products can be viewed at `/tvs`.
 
 ## Development
 
