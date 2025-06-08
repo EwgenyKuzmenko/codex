@@ -1,18 +1,22 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './Home.jsx'
-import Phones from './Phones.jsx'
+import { Routes, Route, Link } from 'react-router-dom'
+import Products from './Products.jsx'
+
+function Home() {
+  return (
+    <section className="hero">
+      <h1>КомКом</h1>
+      <p>Лучшие телевизоры для вашего дома</p>
+      <Link to="/tvs" className="cta-button">К товарам</Link>
+    </section>
+  )
+}
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <nav className="nav">
-        <Link to="/">Главная</Link> | <Link to="/phones">Телефоны</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/phones" element={<Phones />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/tvs" element={<Products />} />
+    </Routes>
   )
 }
