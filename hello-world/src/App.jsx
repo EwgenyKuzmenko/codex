@@ -1,31 +1,22 @@
 import './App.css'
+import { Routes, Route, Link } from 'react-router-dom'
+import Products from './Products.jsx'
 
-const products = Array.from({ length: 20 }, (_, i) => ({
-  id: i + 1,
-  name: `Телевизор ${i + 1}`,
-  price: 30000 + i * 1000,
-  image: `https://source.unsplash.com/featured/300x200?tv&sig=${i}`,
-}))
+function Home() {
+  return (
+    <section className="hero">
+      <h1>КомКом</h1>
+      <p>Лучшие телевизоры для вашего дома</p>
+      <Link to="/tvs" className="cta-button">К товарам</Link>
+    </section>
+  )
+}
 
 export default function App() {
   return (
-    <div>
-      <section className="hero">
-        <h1>КомКом</h1>
-        <p>Лучшие телевизоры для вашего дома</p>
-        <a href="#products" className="cta-button">К товарам</a>
-      </section>
-
-      <h2 className="app-title" id="products">Наш ассортимент</h2>
-      <div className="grid">
-        {products.map((p) => (
-          <div key={p.id} className="item">
-            <img src={p.image} alt={p.name} />
-            <h3>{p.name}</h3>
-            <p>{p.price} ₽</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/tvs" element={<Products />} />
+    </Routes>
   )
 }
