@@ -80,3 +80,48 @@ body {
   height: auto;
   margin-bottom: 0.5rem;
 }
+
+/* Modern home page additions */
+.modern-hero {
+  background: linear-gradient(135deg, #fdd835, #f0c040);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.feature-card {
+  background-color: #fffbe6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.feature-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #b8860b;
+}
+
+.cta-button.small {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
