@@ -1,12 +1,7 @@
 import './App.css'
 import Nav from './Nav.jsx'
-
-const phones = Array.from({ length: 20 }, (_, i) => ({
-  id: i + 1,
-  name: `Телефон ${i + 1}`,
-  price: 20000 + i * 500,
-  image: `https://source.unsplash.com/featured/300x200?phone&sig=${i}`,
-}))
+import { Link } from 'react-router-dom'
+import { phones } from './phones'
 
 export default function Phones() {
   return (
@@ -23,11 +18,11 @@ export default function Phones() {
       <h2 className="app-title">Телефоны</h2>
       <div className="grid">
         {phones.map((p) => (
-          <div key={p.id} className="item">
+          <Link key={p.id} to={`/phones/${p.id}`} className="item">
             <img src={p.image} alt={p.name} />
             <h3>{p.name}</h3>
             <p>{p.price} ₽</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { products } from './products'
 import Nav from './Nav.jsx'
+import { Link } from 'react-router-dom'
 
 export default function Products() {
   return (
@@ -16,11 +17,11 @@ export default function Products() {
       <h2 className="app-title" id="products">Наш ассортимент</h2>
       <div className="grid">
         {products.map((p) => (
-          <div key={p.id} className="item">
+          <Link key={p.id} to={`/tvs/${p.id}`} className="item">
             <img src={p.image} alt={p.name} />
             <h3>{p.name}</h3>
             <p>{p.price} ₽</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

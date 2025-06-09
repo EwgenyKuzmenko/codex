@@ -125,3 +125,29 @@ body {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
 }
+
+/* product page */
+.product-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fffbe6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-page img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 1rem;
+}
+
+.product-details .price {
+  font-size: 1.25rem;
+  color: #b8860b;
+  margin-bottom: 1rem;
+}
