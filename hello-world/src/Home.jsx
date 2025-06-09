@@ -1,14 +1,11 @@
 import './App.css'
+import Nav from './Nav.jsx'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
     <div>
-      <header className="nav">
-        <Link to="/">КомКом</Link>
-        <Link to="/tvs">Телевизоры</Link>
-        <Link to="/phones">Телефоны</Link>
-      </header>
+      <Nav />
 
       <section className="hero modern-hero">
         <div className="hero-content">
